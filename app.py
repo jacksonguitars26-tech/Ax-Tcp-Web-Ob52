@@ -262,6 +262,6 @@ def proxy_guild():
 
 if __name__ == '__main__':
     # Render-এ পোর্ট এনভায়রনমেন্ট ভেরিয়েবল থেকে নিতে হয়
-    port = int(os.environ.get("PORT", 30000))
+    port = int(os.environ.get("PORT", 10000))
     # Render-এ রিয়েল-টাইম লগের জন্য host '0.0.0.0' হওয়া বাধ্যতামূলক
     socketio.run(app, host='0.0.0.0', port=port)
