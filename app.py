@@ -63,7 +63,7 @@ LOGIN_HTML = """
         </div>
         <button class="login-btn" onclick="doLogin()">➜ LOGIN</button>
         <div class="info-footer">
-            <span>ⓘ Default: admin / changeme123</span>
+            <span>ⓘ Default: admin / ax1234</span>
             Developer @axromjanhossain !
         </div>
     </div>
@@ -156,7 +156,7 @@ def login_auth():
     data = request.json
     u = data.get('username')
     p = data.get('password')
-    if u == "admin" and p == "changeme123":
+    if u == "admin" and p == "ax1234":
         session['logged_in'] = True
         return jsonify({"status": "success"})
     return jsonify({"status": "error", "message": "Invalid credentials!"})
